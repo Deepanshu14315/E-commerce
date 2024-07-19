@@ -18,17 +18,17 @@ const Nav = () => {
   // console.log(color())
 
   return (
-    <nav className=" w-[20%] h-screen bg-zinc-100 flex flex-col  p-5 items-center">
+    <nav className=" w-[36%] lg:w-[20%] h-screen bg-zinc-100 flex flex-col  p-5 items-center">
       
       <Link
         to="/"
-        className="border border-blue-400 text-blue-400 px-4 py-2 mt-8 text-sm font-semibold rounded-md mb-4 whitespace-nowrap"
+        className=" text-blue-600 px-4 py-2 mt-8 text-xl border font-semibold rounded-md mb-4 whitespace-nowrap"
       >
-        Add a product
+        E Commerce
       </Link>
-      <h1 className="mt-2 font-semibold">Category Filter</h1>
+      <h1 className="mt-2 font-semibold lg:text-xl text-gray-800">Category Filter</h1>
       <hr className="w-[80%] mt-2" />
-      <div className="w-[80%] mt-3">
+      <div className="w-[100%] lg:w-[80%] mt-4 lg:text-lg">
         {distinctCategory.map((c, i) => (
           <Link
             key={i}
